@@ -322,8 +322,9 @@ footer {
     }
 
     header button {
-        font-size: .4em;
+        font-size: .3em;
         margin: 0;
+        height: 16px;
         width: 100%;
     }
 
@@ -479,6 +480,7 @@ footer {
         width: 20%;
         margin-right: 10px;
         font-size: .5em;
+        height: 20px;
     }
 
     header input {
