@@ -1,3 +1,6 @@
+/* General Styles */
+
+
 html {
 	font-size: 16px;
 }
@@ -9,7 +12,6 @@ body {
 	font-size: 1em;
 	justify-content: center;
 }
-
 
 .container {
 	align-items: center;
@@ -57,18 +59,15 @@ body {
     top: 10px;
 }
 
-h1,
-h2,
-h3 {
-	color: black;
-	font-weight: 700;
-}
+
 h1 {
 	font-size: 1.875em;
 }
+
 h2 {
 	font-size: 1em;
 }
+
 h3 {
 	font-size: 0.8em;
 }
@@ -78,7 +77,8 @@ p {
     line-height: 21px;
 }
 
-/*The widths are in a percentage!*/
+/* Header Styles */
+
 header {
 	
 	display: flex;
@@ -89,7 +89,6 @@ header {
 .wrapper {
     background-color: #003300;
    
-    
 }
 
 .left-menu {
@@ -101,8 +100,6 @@ header {
     
 }
 
-
-
 .right-menu {
     display: flex;
     justify-content: center;
@@ -111,13 +108,15 @@ header {
     align-items: center;
     
 }
- nav ul  {
+ 
+nav ul  {
     font-size: 1.2em;
     padding: 0px;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
 }
+
 nav ul li {
 	color:ghostwhite;
 	text-transform: uppercase;
@@ -127,11 +126,9 @@ nav ul li {
 	padding: 0 5px;
 }
 
-
-
 li::marker {
     content: none;
-  }
+}
 
 header button {
     font-size: 0.6em;
@@ -139,14 +136,10 @@ header button {
     width: 100px;
     height: 20px;
     margin-top: 10px;
-    
-
-    
-
 }
 
+
 header input {
-    
     font-size: .6em;
     width: 150px;
     height: 10px;
@@ -174,8 +167,8 @@ header input {
 }
 
 
+/* Main Content */
 
-/*The widths are in a percentage!*/
 .top-section {
     display: flex;
     flex-flow: row wrap;
@@ -189,17 +182,15 @@ header input {
     padding: 0px;
 }
 
- .main-image img {
+.main-image img {
 	width: 100%;
     background-size: cover;
     background-position: center;
-   
 
 }
 
 .section-one {
-    
-       width: 100%;
+    width: 100%;
 }
 
 .section-one h2 {
@@ -227,21 +218,28 @@ header input {
     width: 100%;
 }
 
-/*.section-one,
-.section-two,
-.section-three {
-	border-top: 1px solid #eee;
-	width: 100%;
-}*/
-
 .aside {
 	list-style: none;
 	padding: 0;
     padding-top: 20px;
 }
+
 .aside ul {
 	color:#003300;
     padding-right: 60px;
+}
+
+.aside img {
+    width: 60%;
+}
+
+.section-two {
+    justify-content: center;
+}
+
+.section-two ul {
+    justify-content: center;
+    text-align: center;
 }
 
 .section-three {
@@ -265,20 +263,6 @@ header input {
     padding-inline-start: 0px;
 }
 
-.aside img {
-    width: 60%;
-}
-
-.section-two {
-    justify-content: center;
-}
-
-.section-two ul {
-    justify-content: center;
-    text-align: center;
-}
-
-
 .section-three h3 {
     font-size: 1.5em;
     padding-top: 10px;
@@ -286,9 +270,7 @@ header input {
 }
 
 
-
-
-
+/* Contact */
 
 .contact {
 	flex-direction: column;
@@ -306,7 +288,6 @@ header input {
     width: 40%;
 }
 
-
 .social-icons article {
     display: flex;
     justify-content: space-evenly;
@@ -320,6 +301,7 @@ header input {
     padding: 0px;
 }
 
+/* Footer */
 
 footer {
     width: 100%;
@@ -395,12 +377,12 @@ footer {
     }
     
     .right-menu {
-    display: flex; 
-    align-items: right;
-    width: 35%;
-    flex-flow: nowrap;
-    align-items: right;
-    float: right;
+        display: flex; 
+        align-items: right;
+        width: 35%;
+        flex-flow: nowrap;
+        align-items: right;
+        float: right;
     }
 
     .social ul li {
@@ -426,6 +408,7 @@ footer {
 
     .section-three h3 {
         padding: 0px;
+        padding-bottom: 15px;
         margin-bottom: 0px;
         text-align: center;
     }
@@ -451,9 +434,9 @@ footer {
     }
 
     .social-icons article {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .social-icons article a {
@@ -469,12 +452,27 @@ footer {
 }
 
 @media only screen and (min-width:1200px) {
+    /*Desktop styles here*/
 
     header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
     
+    }
+
+    header nav ul li a {
+        align-content: center;
+        text-decoration: none;
+        color: #77a466;
+        justify-content: center;
+        padding: 20px;
+        font-size: 1em;
+    }
+
+    nav ul li {
+        font-size: .6em;
+        margin: 0 7px;
     }
 
     header button {
@@ -483,35 +481,40 @@ footer {
         font-size: .5em;
     }
 
+    header input {
+        height: 14px;
+    }
+
+
+    header .follow-section {
+        display: flex;
+        font-size: 1em;
+    }
+
     .wrapper {
         padding-right: 0;
     }
 
     .left-menu {
-    display: flex;
-    width: 60%;
-    justify-content: left;
-    padding-left: 20p;
-    align-items: left;
-    padding-left: 20px;
+        display: flex;
+        width: 60%;
+        justify-content: left;
+        padding-left: 20p;
+        align-items: left;
+        padding-left: 20px;
      }
     
     .right-menu {
-    display: flex; 
-    align-items: right;
-    width: 35%;
-    flex-flow: nowrap;
-    align-items: right;
-    float: right;
+        display: flex; 
+        align-items: right;
+        width: 35%;
+        flex-flow: nowrap;
+        align-items: right;
+        float: right;
     }
 
     .social li {
         font-size: 1.3em;
-    }
-
-    nav ul li {
-        font-size: .6em;
-        margin: 0 7px;
     }
 
 
@@ -521,28 +524,13 @@ footer {
        justify-content: space-between;
     }
 
-
-    header nav ul li a {
-    align-content: center;
-    text-decoration: none;
-    color: #77a466;
-    justify-content: center;
-    padding: 20px;
-    font-size: 1em;
-}
-
     .hamburger{
-    width: 30px;
-    height: 5px;
-    background-color: transparent;
-    align-items: left;
-    justify-content: center;
+        width: 30px;
+        height: 5px;
+        background-color: transparent;
+        align-items: left;
+        justify-content: center;
     
-    }
-
-    header .follow-section {
-        display: flex;
-        font-size: 1em;
     }
 
     .top-section {
@@ -566,92 +554,96 @@ footer {
         
     }
 
-     .section-three ul {
-        align-content: flex-start;
-
-    }
-
     .latest-news-image img {
         width: 90%;
         padding-left: 20px;
     }
 
-.description p {
+    .description p {
     font-size: .8em;
-}
+    
+    }
 
-.description h3 {
-    padding: 20px;
-    margin: 0px;
-    font-size: .9em;
-    line-height: 1.5;
-}
+    .description h3 {
+        padding: 20px;
+        margin: 0px;
+        font-size: .9em;
+        line-height: 1.5;
+    
+    }
 
-.aside ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row;
-    align-items: center;
-    padding-top: 35px;
-}
+    .aside ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row;
+        align-items: center;
+        padding-top: 35px;
+    
+    }
 
-.aside h3 {
-    padding-right: 20px;
-    font-size: .8em;
-    width: 100%;
-    margin: 0;
-    text-align: left;
-}
+    .aside h3 {
+        padding-right: 20px;
+        font-size: .8em;
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    
+    }
 
-.aside img {
-    width: 30%;
-}
+    .aside img {
+        width: 30%;
+    }
 
-.section-two {
-    padding-top: 80px;
-}
+    .section-two {
+        padding-top: 80px;
+    }
 
-.section-one h2 {
-    padding-top: 10px;
-}
+    .section-one h2 {
+        padding-top: 10px;
+    }
 
-.section-three h3 {
-    font-size: 2em;
-    padding-bottom: 30px;
-    padding-left: 0;
-    text-align: left;
-}
+    .section-three ul {
+        align-content: flex-start;
 
-.section-three ul li {
-    text-align: left;
-    padding: 7.5px 0;
-    line-height: 1.75;
-}
+    }
 
-.contact {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-    padding: 20px 0 30px 0;
-}
+    .section-three h3 {
+        font-size: 2em;
+        padding-bottom: 30px;
+        padding-left: 0;
+        text-align: left;
+    }
 
-.contact .social-icons {
-    flex-flow: column;
-    width: 10%;
-    padding-left: 60px;
-}
+    .section-three ul li {
+        text-align: left;
+        padding: 7.5px 0;
+        line-height: 1.75;
+    }
 
-.contact .contact-images {
-    flex-flow: row;
-    width: 85%;
-}
+    .contact {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0 30px 0;
+    }
 
-.contact img {
-    width: 17%;
-}
+    .contact .social-icons {
+        flex-flow: column;
+        width: 10%;
+        padding-left: 60px;
+    }
+
+    .contact .contact-images {
+        flex-flow: row;
+        width: 85%;
+    }
+
+    .contact img {
+        width: 17%;
+    }
 
 
 }
